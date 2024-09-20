@@ -22,6 +22,9 @@ a:hover {
   color: #535bf2;
 }
 
+ 
+
+
 body {
   margin: 0;
   display: flex;
@@ -29,9 +32,39 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background: url('src/assets/workdesk.jpg');
-  background-position: center; /* Center the image */
+  justify-content: center;
+  background-position: center;
   background-size: cover;
+  position: relative; /* Make the body a positioned element */
 }
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1; 
+}
+
+
+.coming-soon-content {
+  position: relative;
+  z-index: 2; 
+  color: white;
+}
+
+.coming-soon-content h1,
+.coming-soon-content h3,
+.coming-soon-content h5,
+.coming-soon-content h4 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.85);
+}
+
+
+
 
 h1 {
   font-size: 3.2em;
@@ -69,3 +102,4 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+

@@ -6,14 +6,17 @@ function App() {
   return (
     <div className="coming-soon-wrapper">
       <div className="coming-soon-content">
-        <h1>Welcome</h1>
-        <h2>We're preparing something amazing. Stay tuned!</h2>
-        {/* <div className="coming-soon-image">
-          <img height={400} width={600} src="src/assets/workdesk.jpg" alt="Coming Soon" />
-        </div> */}
-        <h4>Thank you for your patience. We look forward to sharing our up to date offers with you soon.</h4>
+        <h1>Under Construction</h1>
+        <h5 style={{ fontSize: "1.15rem" }}>
+          <p>
+            We’re almost there! Our website will be live soon, and we can't wait for you to see what we’ve been working on.
+          </p>
+
+        </h5>
+        <h3>Thank you for your patience!</h3>
       </div>
     </div>
+
   );
 }
 
